@@ -1,0 +1,200 @@
+.class-section-bg-container {
+  display: grid;
+  grid-template-columns: 1fr; /* Display two items per row by default */
+  gap: 20px; /* Adjust the gap between item */
+  justify-items: center;
+  align-items: center;
+  padding: 20px;
+  padding-top: 40px;
+}
+
+.cards-container {
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 40px;
+  min-height: 440px;
+}
+.card {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 20px;
+  background: var(--white, #fff);
+  box-shadow: 0px 3.12555px 5.92563px 0px rgba(0, 0, 0, 0.04),
+    0px 47px 152px 0px rgba(0, 0, 0, 0.09);
+  margin-top: 20px;
+  padding: 10px;
+}
+.card-media {
+  display: flex;
+  align-items: center;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+.avatar-img {
+  width: 65px;
+  height: 65px;
+}
+.media-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+.text-content-head {
+  color: var(--black, #000);
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 14px;
+}
+.text-content-para {
+  color: #000;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 20px;
+  width: 100%;
+  margin-top: 0px;
+  align-self: stretch;
+}
+.tropic-adventure-container {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-items: center;
+  gap: 60px;
+  margin-top: 50px;
+}
+.tropic-responsive-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tropic-heading {
+  color: #000;
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  width: 90%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  line-height: normal;
+}
+.span-tropic {
+  color: #000;
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.text-student-vacation {
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.tropic-top-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 25px;
+}
+
+.tropic-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding-left: 15px;
+}
+.tropic-list-item {
+  color: #000;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 30px; /* 187.5% */
+  font-weight: 400;
+}
+.explore-more-btn {
+  display: flex;
+  padding: 16px 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border-radius: 30px;
+  background: #f27a44;
+  border: none;
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 0px;
+  margin-left: 25px;
+}
+.responsive-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .class-section-bg-container {
+    grid-template-columns: 1fr 1fr; /* Display two items per row by default */
+    gap: 30px; /* Adjust the gap between items */
+    padding: 70px;
+    align-items: center;
+    justify-items: center;
+  }
+  .tropic-adventure-container {
+    padding: 30px;
+    flex-shrink: 0;
+  }
+  .cards-container {
+    padding: 30px;
+    min-width: 320px;
+  }
+  .tropic-heading {
+    font-size: 25px;
+  }
+  .span-tropic {
+    font-size: 25px;
+  }
+  .text-student-vacation {
+    color: #000;
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 4px;
+  }
+
+  .tropic-list-item {
+    font-size: 14px;
+  }
+  .explore-more-btn {
+    padding: 12px 38px;
+    gap: 16px;
+    border-radius: 20px;
+  }
+  .cards-container {
+    height: 550px;
+  }
+}
